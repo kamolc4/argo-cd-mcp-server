@@ -9,15 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NODE_ENV: test
-      MCP_API_KEY: test-api-key-1234567890
-      ARGOCD_SERVER_URL: https://argocd.example.com
-      ARGOCD_TOKEN: test-token
-      ARGOCD_INSECURE_TLS: 'false'
-      ARGOCD_NAMESPACE: argocd
-      RATE_LIMIT_WINDOW_MS: '60000'
-      RATE_LIMIT_MAX: '60'
-      ENABLE_SYNC_TOOL: 'false'
+      NODE_ENV: development
 
     steps:
       - name: Checkout
@@ -26,11 +18,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: 24
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --include=dev
+
+      - name: Verify eslint
+        run: npx eslint --version
 
       - name: Lint
         run: npm run lint
