@@ -32,6 +32,11 @@ jobs:
       - name: Update npm
         run: npm install -g npm@latest
 
+      - name: Disable IPv6
+        run: |
+          sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+          sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+
       - name: Install dependencies
         timeout-minutes: 5
         run: npm ci --no-audit --no-fund
