@@ -38,8 +38,8 @@ jobs:
           sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
 
       - name: Install dependencies
-        timeout-minutes: 5
-        run: npm ci --no-audit --no-fund
+        timeout-minutes: 10
+        run: npm ci --no-audit --no-fund --loglevel verbose
         env:
           NPM_CONFIG_FETCH_RETRIES: 5
           NPM_CONFIG_FETCH_RETRY_MINTIMEOUT: 10000
