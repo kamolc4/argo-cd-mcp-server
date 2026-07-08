@@ -1,7 +1,7 @@
 # Argo CD MCP Server
 
 [![CI](https://github.com/kamolc4/argo-cd-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/kamolc4/argo-cd-mcp-server/actions/workflows/ci.yml)
-[![Verified by MCPForge](https://www.mcpforge.tech/api/servers/argo-cd-mcp-server/badge)](https://www.mcpforge.tech/verified/argo-cd-mcp-server)
+[![Verified by MCPForge](https://www.mcpforge.tech/api/badge/verified/argo-cd-mcp-server)](https://www.mcpforge.tech/verified/argo-cd-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A production-ready Model Context Protocol server for the Argo CD API.
@@ -253,7 +253,7 @@ MCPForge can help review:
 After verification, you can link your public report from this README:
 
 ```md
-[![Verified by MCPForge](https://www.mcpforge.tech/api/servers/argo-cd-mcp-server/badge)](https://www.mcpforge.tech/verified/argo-cd-mcp-server)
+[![Verified by MCPForge](https://www.mcpforge.tech/api/badge/verified/argo-cd-mcp-server)](https://www.mcpforge.tech/verified/argo-cd-mcp-server)
 ```
 
 ## Deployment
